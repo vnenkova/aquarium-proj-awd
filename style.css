@@ -156,6 +156,10 @@ html, body {
   background-color: rgba(13, 35, 55, 0.85) !important;
 }
 
+.transpBtn {
+  background-color: rgba(13, 35, 55, 0.45) !important;
+}
+
 .dark-menu > .dropdown-item:hover {
   color: black !important;
 }
