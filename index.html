@@ -15,7 +15,7 @@
   <body> 
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-lg mt-2 rounded rounded-5 px-2 py-3 px-sm-0 py-sm-0 mx-2">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-lg rounded rounded-5 rounded-top-0 px-2 py-3 px-sm-0 py-sm-0">
         <div class="container py-3 py-lg-2">
           <a class="navbar-brand" href="#!"><span style="color: #5e9693;"><img src="images/logo-1.png" alt="Varna Aquarium" width="150px"></a>
           <button 
@@ -31,13 +31,25 @@
           <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link text-light fs-5" href="#!">Начало</a>
+                <a class="nav-link text-light fs-5" href="#">Начало</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a 
+                  class="nav-link dropdown-toggle text-light fs-5" 
+                  href="#" 
+                  role="button" 
+                  data-bs-toggle="dropdown" 
+                  aria-expanded="false">
+                  За аквариума
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dark-menu dropdown-menu-start mt-0 mt-lg-4 mb-3 mb-lg-0 shadow-lg">
+                  <li><a class="dropdown-item fs-5 text-light" href="#about">История</a></li>
+                  <li><a class="dropdown-item fs-5 text-light" href="#gallery">Галерия</a></li>
+                  <li><a class="dropdown-item fs-5 text-light" href="#">Отзиви</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light fs-5" href="#!">За нас</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light fs-5" href="#!">Контакти</a>
+                <a class="nav-link text-light fs-5" href="#">Контакти</a>
               </li>
               <li class="nav-item dropdown">
                 <a 
@@ -54,6 +66,11 @@
                   <li><a class="dropdown-item fs-5 text-light" href="#">Програми</a></li>
                   <li><a class="dropdown-item fs-5 text-light" href="#">Посещения</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fs-5" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
               </li>
             </ul>
             <div class="d-flex gap-3 mt-3 mt-lg-0">
@@ -131,12 +148,60 @@
       <!--Section: Design Block-->
     </header>
     <main>
-      <div class="dark-section">
-        <div class="container text-light py-5">
-          Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Quibusdam, voluptatum. Praesentium, officia impedit odio dolores natus iure reprehenderit nesciunt dolore necessitatibus cum maxime ea voluptates nihil officiis ut, esse maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus hic magnam eaque in ea a perspiciatis, molestiae, consequatur nam, ratione quam ut commodi beatae enim delectus. Dignissimos, facilis laudantium exercitationem!
+      <div class="dark-section" id="about">
+        <div class="container text-light pt-5 px-4 px-lg-1">
+          <div>
+            <h2 class="h1 text-center mb-5" id="about-title">Исторически преглед</h2>
+            <p class="fs-5">Аквариумът във Варна е център за популяризиране на черноморската флора и фауна. Той е част от Института по рибни ресурси, който извършва изследвания върху биоразнообразието и динамиката на рибните и нерибните ресурси в Черно море.</p>
+            <p class="fs-5">Създаден е по идея на <span class="fw-bold">княз Фердинанд</span>. Основният камък на сградата е положен на <span class="text-decoration-underline">22.10.1906 г.</span>, като на тържеството присъстват множество видни личности, сред които цялото царско семейство и министрите на просветата и на външните работи.</p>
+            <p class="fs-5">През <span class="text-decoration-underline">1911 г.</span> сградата вече е изцяло построена, но началото на Балканската война през 1912 г. не дава възможност за завършване на обзавеждането ѝ. По препоръки на професорите-зоолози <span class="fw-bold">д-р Шишков</span> и <span class="fw-bold">д-р Моров</span> през <span class="text-decoration-underline">1913 г.</span> цар Фердинанд предава сградата на Софийския университет, като необходимите инсталации и съоръжения са направени под ръководството на<span class="fw-bold"> д-р Шишков</span>.</p>
+            <p class="fs-5">Настъпването на Първата световна война през 1915 г. отново прекратява развитието на Аквариума, а краят на войната нанася сериозни поражения и на вече построеното здание. Сградата става обежище на войскови части, а по-късно и квартира на прогонените от родината си тракийски бежанци. След края на войната през 1918 г. зданието е използвано последователно от войскови части до 1920 г., от Машинното училище до 1922 г. и от Рибарското училище до 1930 г.</p>
+            <p class="fs-5">Аквариумът е открит официално през <span class="text-decoration-underline">1932 г.</span> от <span class="fw-bold">цар Борис III</span>, като тогава носи името <span class="fw-bold">Морска биологична станция.</span> Сградата и до днес е запазила оригиналната си функция.</p>
+          </div>
         </div>
+          <div class="container text-light py-5 px-4 px-md-1" id="gallery">
+            <h2 class="h1 text-center mb-5" id="gallery-title">Запечатани моменти</h2>
+              <div class="row g-3">
+                <div class="col-3 py-4 d-none d-md-block">
+                    <img src="images/aquarium.jpg" class="img-fluid w-100 shadow-sm">
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="images/aq1.jpg" class="img-fluid w-100 shadow-sm">
+                </div>
+                <div class="col-3 pt-5 pb-md-4 d-none d-md-block">
+                    <img src="images/aq2.jpg" class="img-fluid w-100 shadow-sm">
+                </div>
+                <div class="col-12 col-md-5 pb-md-4">
+                    <img src="images/aq4.jpg" class="img-fluid w-100 shadow-sm">
+                </div>
+                <div class="col-3 py-5 d-none d-md-block">
+                    <img src="images/aq5.jpg" class="img-fluid w-100 shadow-sm">
+                </div>
+                <div class="col-4 pt-4 d-none d-md-block">
+                    <img src="images/aq3.jpg" class="img-fluid w-100 shadow-sm">
+                </div>
+                <div class="col-3 pb-5 d-none d-md-block">
+                    <img src="images/aq7.webp" class="img-fluid w-100 shadow-sm">
+                </div>
+                <div class="col-12 col-md-6 pt-md-4">
+                    <img src="images/aq6.jpg" class="img-fluid w-100 shadow-sm">
+                </div>
+                <div class="col-3 pb-4 d-none d-md-block">
+                    <img src="images/aq8.jpg" class="img-fluid w-100 shadow-sm">
+                </div>
+            </div>
+          </div>
       </div>
     </main>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" data-bs-theme="dark">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Try scrolling the rest of the page to see this option in action.</p>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script>
         const fishes = document.querySelectorAll('.fishes, .fish-extra');
