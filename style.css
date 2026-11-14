@@ -316,6 +316,10 @@ html {
     border: solid 3px #156bc1 !important;
 }
 
+.blue-badge {
+  background-color: #156bc1 !important;
+}
+
 .bg-grad2 {
    background: #368e91;
 background: linear-gradient(90deg,rgba(54, 142, 145, 1) 0%, rgba(57, 147, 237, 1) 100%);
@@ -329,7 +333,6 @@ background: linear-gradient(90deg,rgba(54, 142, 145, 1) 0%, rgba(57, 147, 237, 1
     height: auto;
     width: 90%;
     margin: 0 auto;
-    border-radius: 15px;
 }
 
 #carouselExample2 .card-body {
